@@ -1,16 +1,19 @@
 name = "stm32_blinky_demo"
-description = "Shiny new project"
-version = "0.1.0-dev"
+description = "Blinking LED on STM32"
+version = "0.1.0"
+licenses = "BSD-3-Clause"
 
-authors = ["Olivier Henley"]
+authors = ["AdaCore, Olivier Henley"]
 maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
 maintainers-logins = ["ohenley"]
+website="https://github.com/GNAT-Academic-Program/stm32_blinky_demo"
+tags = ["embedded", "stm32"]
 
 executables = ["stm32_blinky_demo"]
 
 [[depends-on]]
-stm32_gui = "0.1.0-dev"
+stm32_gui = "0.1.0"
 
 [[depends-on]]
-stm32f429disco = "0.1.0-dev"
-#stm32f746disco = "0.1.0-dev"
+stm32f429disco = "0.1.0"
+#stm32f746disco = "0.1.0"
