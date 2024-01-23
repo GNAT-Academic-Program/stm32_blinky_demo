@@ -1,0 +1,16 @@
+name = "stm32_blinky_demo"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Olivier Henley"]
+maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
+maintainers-logins = ["ohenley"]
+
+executables = ["stm32_blinky_demo"]
+
+[[depends-on]]
+stm32_gui = "0.1.0-dev"
+
+[[depends-on]]
+stm32f429disco = "0.1.0-dev"
+#stm32f746disco = "0.1.0-dev"
