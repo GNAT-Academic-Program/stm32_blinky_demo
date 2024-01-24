@@ -1,3 +1,3 @@
 # stm32_blinky_demo
 
-<iframe src="https://giphy.com/embed/1YFXPRZUw9q4YEypn7" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/1YFXPRZUw9q4YEypn7">via GIPHY</a></p>
+![hippo](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGZyNDg1dXlmZW9saDk5dDh2cnRlb2J6anpnb2d4enZrYnE4ZTFmaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1YFXPRZUw9q4YEypn7/giphy.gif)
