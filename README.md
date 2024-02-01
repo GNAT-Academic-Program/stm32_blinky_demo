@@ -53,7 +53,7 @@ gnatstudio stm32_blinky_demo.gpr
 ### Program to Board
 
 ```console
-openocd -f /usr/local/share/openocd/scripts/board/stm32f429disc1.cfg -c 'program bin/stm32_blinky_demo verify reset exit'
+openocd -f /usr/share/openocd/scripts/board/stm32f429disc1.cfg -c 'program bin/stm32_blinky_demo verify reset exit'
 ```   
 
 ## Contributing
