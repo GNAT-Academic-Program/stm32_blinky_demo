@@ -31,7 +31,11 @@ Edit the `alire.toml` file by uncommenting the board for which you build: (eg. S
 stm32f429disco = "0.1.0"
 #stm32f746disco = "0.1.0"
 ...
-```  
+```
+### Pin Working Cross Compiler (IMPORTANT)
+```console
+alr pin gnat_arm_elf=12.2.1
+```
 
 ### Build (Alire)
 ```console
