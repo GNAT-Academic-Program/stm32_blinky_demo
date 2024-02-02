@@ -12,3 +12,17 @@ begin
       delay until Next_Release;
    end loop;
 end STM32_Blinky_Demo;
+
+
+
+-- Comments
+
+
+
+
+
+
+
+
+
+
