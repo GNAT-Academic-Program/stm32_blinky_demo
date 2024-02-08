@@ -11,7 +11,9 @@ tags = ["embedded", "stm32"]
 
 executables = ["stm32_blinky_demo"]
 
-
 [[depends-on]]
 stm32f429disco = "0.1.0"
 #stm32f746disco = "0.1.0"
+
+[[pins]]
+gnat_arm_elf = { version='12.2.1' }
