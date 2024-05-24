@@ -3,7 +3,17 @@ with "config/stm32_hal_config.gpr";
 project Stm32_Blinky_Demo is
 
    for Target use "arm-eabi";
-   for Runtime ("Ada") use "embedded-" & stm32_hal_config.DEVICE & "disco";
+   
+   Runtime_Device := "";
+   case stm32_hal_config.DEVICE is
+      when "stm32f407xx" =>
+         Runtime_Device := "stm32f4";
+      when "stm32f429" =>
+         Runtime_Device := "stm32f429disco";
+      when "stm32f746" =>
+         Runtime_Device := "stm32f746disco";
+   end case;
+   for Runtime ("Ada") use "embedded-" & Runtime_Device;
 
    for Source_Dirs use ("src/", "config/");
    for Object_Dir use "obj/" & Stm32_Blinky_Demo_Config.Build_Profile;
