@@ -12,8 +12,8 @@ tags = ["embedded", "stm32"]
 executables = ["stm32_blinky_demo"]
 
 [[depends-on]]
-stm32f4xxm_devebox = "0.1.0"
-#stm32f429disco = "0.1.0"
+#stm32f4xxm_devebox = "0.1.0"
+stm32f429disco = "0.1.0"
 #stm32f746disco = "0.1.0"
 
 [[pins]]

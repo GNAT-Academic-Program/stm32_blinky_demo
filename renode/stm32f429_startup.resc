@@ -1,0 +1,28 @@
+# STM32F429 Renode Script
+
+# Create a new machine
+mach create "stm32f429_custom"
+
+# Load the custom platform description for STM32F429
+machine LoadPlatformDescription @/home/henley/Desktop/GAP_org/stm32_blinky_demo/renode/stm32f429_custom.repl
+
+# Load your ELF file
+sysbus LoadELF @/home/henley/Desktop/GAP_org/stm32_blinky_demo/bin/stm32_blinky_demo
+
+# Set up logging of the UserLED change of state
+logLevel -1 gpioPortG.UserLED
+
+# Print initial CPU state
+echo "Initial CPU State:"
+echo "PC: $sysbus.cpu.PC"
+echo "SP: $sysbus.cpu.SP"
+
+# Start the machine
+start
+
+# Print some helpful information
+echo ""
+echo "Emulation started. The LED should be blinking."
+echo "To pause emulation, use: 'pause'"
+echo "To resume emulation, use: 'start'"
+echo ""

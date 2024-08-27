@@ -60,6 +60,30 @@ gnatstudio stm32_blinky_demo.gpr
 openocd -f /usr/share/openocd/scripts/board/stm32f429disc1.cfg -c 'program bin/stm32_blinky_demo verify reset exit'
 ```   
 
+### Running on Renode
+
+First make sure you have Renode (>= 1.15.2) binaries visible on your PATH.  
+     
+Launch the Renode console:
+```
+renode --console
+```
+Then at Renode prompt:
+```
+ include @/path/to/stm32_blinky_demo/renode/stm32f429_startup.resc
+```
+
+It will launch the Renode script `stm32f429_startup.resc`. You should see alternating logging of sort:
+```
+... [NOISY] stm32f429_custom/gpioPortG.UserLED: LED state changed to False
+... [NOISY] stm32f429_custom/gpioPortG.UserLED: LED state changed to True
+```
+
+To terminate:
+```
+quit
+```
+
 ## Contributing
 
 Your contributions are welcome! If you wish to improve or extend the capabilities of this BSP, please feel free to fork the repository, make your changes, and submit a pull request.
