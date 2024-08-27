@@ -68,6 +68,7 @@ Launch the Renode console:
 ```
 renode --console
 ```
+    
 Then at Renode prompt:
 ```
  include @/path/to/stm32_blinky_demo/renode/stm32f429_startup.resc
@@ -75,8 +76,10 @@ Then at Renode prompt:
 
 It will launch the Renode script `stm32f429_startup.resc`. You should see alternating logging of sort:
 ```
+...
 ... [NOISY] stm32f429_custom/gpioPortG.UserLED: LED state changed to False
 ... [NOISY] stm32f429_custom/gpioPortG.UserLED: LED state changed to True
+...
 ```
 
 To terminate:
