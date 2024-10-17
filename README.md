@@ -55,11 +55,14 @@ gnatstudio stm32_blinky_demo.gpr
 ```
 
 ### Program to Board
-
+- Linux, MacOS:    
 ```console
 openocd -f /usr/share/openocd/scripts/board/stm32f429disc1.cfg -c 'program bin/stm32_blinky_demo verify reset exit'
 ```   
-
+- Windows:
+```console
+openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c 'program bin/stm32_blinky_demo verify reset exit'
+```
 ### Running on [Renode](https://github.com/renode/renode)
 
 First make sure you have Renode (>= 1.15.2) binaries visible on your PATH.  
