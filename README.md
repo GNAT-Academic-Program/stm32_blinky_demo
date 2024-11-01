@@ -67,14 +67,14 @@ openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c 'program bin/stm32_bli
 
 First make sure you have Renode (>= 1.15.2) binaries visible on your PATH.  
      
-Launch the Renode console:
+Launch the Renode console (at the root of this repo):
 ```
 renode --console
 ```
     
 Then at Renode prompt:
 ```
- include @/path/to/stm32_blinky_demo/renode/stm32f429_startup.resc
+ include @renode/stm32f429_startup.resc
 ```
 
 It will launch the Renode script `stm32f429_startup.resc`. You should see alternating logging of sort:
